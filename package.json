@@ -1,7 +1,7 @@
 {
-  "name": "project",
+  "name": "social-links-profile",
   "version": "1.0.0",
-  "description": "A brief description of project",
+  "description": "A simple card featuring the social links profile of a user",
   "main": "app.js",
   "type": "module",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EONRaider/Project.git"
+    "url": "git+https://github.com/Havoc-Solutions/social-links-profile.git"
   },
   "author": "EONRaider",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EONRaider/Project/issues"
+    "url": "https://github.com/Havoc-Solutions/social-links-profile/issues"
   },
-  "homepage": "https://github.com/EONRaider/Project#readme",
+  "homepage": "https://github.com/Havoc-Solutions/social-links-profile#readme",
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
