@@ -5,8 +5,7 @@
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
 This is a solution to [Social Links Profile](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ).
-Frontend Mentor challenges help you
-improve your coding skills by building realistic projects.
+Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -18,7 +17,6 @@ improve your coding skills by building realistic projects.
   - [Run with Docker](#run-with-docker)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -28,6 +26,8 @@ improve your coding skills by building realistic projects.
 - [My Solution on Frontend Mentor]()
 
 ### Screenshot
+
+![Social-Links-Profile](https://github.com/Havoc-Solutions/social-links-profile/assets/15611424/2489a2c8-61d9-4c04-9284-09fd213a77b5)
 
 ## Try it out!
 
@@ -60,5 +60,3 @@ docker run -d -p 3000:3000 eonraider/social-links-profile
 
 - Semantic HTML5 markup
 - Cube CSS methodology
-
-### What I learned
