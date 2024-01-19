@@ -110,7 +110,7 @@ body * {
   color: vars.$clr-grey-200;
 }
 
-@media only screen and (width < 1440px) {
+@media only screen and (width < 768px) {
   .card {
     padding: 24px;
     width: 327px;
