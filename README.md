@@ -23,7 +23,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 ### Links
 
 - [Check the Live Site](https://eon-social-links-profile.netlify.app/)
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/html5scss-social-links-profile-ZE8UaLP3bp)
 
 ### Screenshot
 
