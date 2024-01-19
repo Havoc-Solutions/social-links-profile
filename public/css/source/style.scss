@@ -2,43 +2,117 @@
 @use 'utils' as utils;
 @use 'variables' as vars;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@include utils.setFont(Inter, url('../fonts/Inter-Regular.ttf'));
+@include utils.setFont(Inter, url('../fonts/Inter-SemiBold.ttf'), 600);
+@include utils.setFont(Inter, url('../fonts/Inter-Bold.ttf'), 700);
 
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
-}
-
-body {
-  min-height: 100vh;
-}
-
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin: 0;
-}
-
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
-img, picture {
-  max-width: 100%;
-  display: block;
-}
-
-input, button,
-textarea, select {
-  font: inherit;
+:root {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
 }
 
 // COMPOSITION
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex-direction: column;
+  align-items: center;
+}
+
 // UTILITIES
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+.bg-primary {
+  background-color: vars.$clr-black-50;
+}
+
+.bg-secondary {
+  background-color: vars.$clr-grey-50;
+}
+
+.bg-highlight {
+  background-color: vars.$clr-grey-200;
+}
+
+.clr-primary {
+  color: vars.$clr-white-800;
+}
+
+.clr-highlight {
+  color: vars.$clr-green-400;
+}
+
+.fnt-semi-bold {
+  font-weight: 600;
+}
+
+.fnt-bold {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
+
 // BLOCK
+.card {
+  width: 384px;
+  padding: 40px;
+  border-radius: 12px;
+  gap: 24px;
+  text-align: center;
+}
+
+.user__image {
+  @include utils.setDimensions(88px, 88px);
+  border-radius: 50%;
+}
+
+.user-info-wrapper {
+  --flow-space: 4px;
+}
+
+.user__name {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.user__location, .user__bio, .links {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.links {
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.link {
+  border-radius: 8px;
+  padding-block: 12px;
+}
+
 // EXCEPTIONS
+body * {
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  cursor: pointer;
+  background-color: vars.$clr-green-400;
+  color: vars.$clr-grey-200;
+}
+
+@media only screen and (width < 1440px) {
+  .card {
+    padding: 24px;
+    width: 327px;
+  }
+}

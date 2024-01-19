@@ -40,40 +40,130 @@ button {
   background-color: inherit;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
 }
-
-html {
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  text-size-adjust: none;
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+:root {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
 }
 
 body {
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin: 0;
+main {
+  flex-direction: column;
+  align-items: center;
 }
 
-ul[role=list],
-ol[role=list] {
-  list-style: none;
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
 }
 
-img, picture {
-  max-width: 100%;
-  display: block;
+.bg-primary {
+  background-color: #141414;
 }
 
-input, button,
-textarea, select {
-  font: inherit;
+.bg-secondary {
+  background-color: #1F1F1F;
+}
+
+.bg-highlight {
+  background-color: #333333;
+}
+
+.clr-primary {
+  color: #FFFFFF;
+}
+
+.clr-highlight {
+  color: #C4F82A;
+}
+
+.fnt-semi-bold {
+  font-weight: 600;
+}
+
+.fnt-bold {
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+}
+
+.card {
+  width: 384px;
+  padding: 40px;
+  border-radius: 12px;
+  gap: 24px;
+  text-align: center;
+}
+
+.user__image {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.user-info-wrapper {
+  --flow-space: 4px;
+}
+
+.user__name {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.user__location, .user__bio, .links {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.links {
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.link {
+  border-radius: 8px;
+  padding-block: 12px;
+}
+
+body * {
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  cursor: pointer;
+  background-color: #C4F82A;
+  color: #333333;
+}
+
+@media only screen and (width < 1440px) {
+  .card {
+    padding: 24px;
+    width: 327px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
